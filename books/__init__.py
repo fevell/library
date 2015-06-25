@@ -49,8 +49,9 @@ class Author(Base):
 
 # DB CONNECT
 # ==========
-engine = create_engine(
-    "sqlite:////Users/sergeysoroka/Dropbox/work/projects/prom/library/books/db/books.db")
+db_path = 'sqlite:///%s/%s' % (os.path.abspath('.'), 'books/db/books.db')
+engine = create_engine(db_path)
+
 Base.metadata.create_all(engine)
 Session = sessionmaker(bind=engine)
 session = Session()
