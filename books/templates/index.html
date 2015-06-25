@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/app.min.css') }}">
+</head>
+<body>
+	{% if book %}
+		{% for i in book %}
+			<h1>{{ i.id }}</h1>
+			<p>{{ i.title }}</p>
+		{% endfor %}
+	{% else %}
+	  <h1>Holla!</h1>
+	{% endif %}
+</body>
+</html>
