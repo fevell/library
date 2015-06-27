@@ -1,3 +1,10 @@
+{% set prev_from = page_from - per_page*2 + 1 %}
+{% set prev_to = page_from - per_page %}
+{% set next_from = page_next - per_page+1 %}
+{% set next_to = page_next %}
+{% set current_from = prev_to + 1 %}
+{% set current_to = next_from - 1 %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,19 +13,79 @@
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/app.min.css') }}">
 </head>
 <body>
-	<h2>Catalog</h2>
-	<hr>
-	{% if book %}
-		<ul>
-			{% for i in book %}
-			<li>
-				<span>{{ i.id }}</span>
-				<span>{{ i.title }}</span>
-			</li>
-			{% endfor %}
-		</ul>
-	{% else %}
-	  <h1>Holla!</h1>
-	{% endif %}
+
+	<header>
+		<div class="container">
+			<div class="half top">
+				<div class="caption">
+					<a href="{{ url_for('index') }}" class="logo">The Library</a>
+					<p>List of {{ books_count }} greatest books of all time</p>
+				</div>
+			</div>
+			<div class="half">
+				<div class="account">
+					<a href="#">Sign in</a>
+				</div>
+				<div class="search">
+					<form action="/">
+						<input type="text" placeholder="Enter book title or author name">
+						<input type="submit" value="Search">
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section>
+		<div class="container">
+			{% if books %}
+				<ul class="books">
+				{% for book, author in books %}
+						<li>
+							<a href="{{ url_for('books', id = book.id) }}">
+								<h4>{{ book.title|e }}</h4>
+								<span>{{ author.name|e }}</span>
+								<span><i>Book ID:{{ book.id }}. Author ID: {{ author.id }}</i></span>
+							</a>
+						</li>
+				{% endfor %}
+				</ul>
+				<div class="pagination">
+					<ul>
+						{% if page == 2 %}
+							<li>
+								<a href="{{ url_for('index') }}">{{ prev_from }}&#133;{{ prev_to}}</a>
+							</li>
+						{% elif page > 1 %}
+							<li>
+								<a href="{{ url_for('index', page = page - 1) }}">&lt; {{ prev_from }}&#133;{{ prev_to }}</a>
+							</li>
+						{% endif %}
+						<li>
+							<span>{{ current_from }}&#133;{{ current_to }}</span>
+						</li>
+						{% if page < books_limit %}
+							<li>
+								<a href="{{ url_for('index', page = page + 1) }}">{{ next_from }}&#133;{{ next_to }} &gt;</a>
+							</li>
+						{% endif %}
+					</ul>
+				<div>
+			{% else %}
+				<div class="books-empty">
+					<article>
+						<h1>No books :(</h1>
+						<p>Your library is empty. Please signup and add first!</p>
+					</article>
+				</div>
+			{% endif %}
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<span>2015. Author: Sergey Soroka. Email: <a href="mailto:sergey.soroka@me.com">sergey.soroka@me.com</a></span>
+		</div>
+	</footer>
 </body>
 </html>
