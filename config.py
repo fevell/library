@@ -12,6 +12,7 @@ STATIC_FOLDER = 'static'
 #     {'name': 'Flickr', 'url': 'http://www.flickr.com/<username>'},
 #     {'name': 'MyOpenID', 'url': 'https://www.myopenid.com'}]
 
+
 SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'books/db/books.db')
 # SQLALCHEMY_MIGRATE_REPO = os.path.join(basedir, 'db_repository')
 # WHOOSH_BASE = os.path.join(basedir, 'books/db/search.db')
@@ -25,6 +26,11 @@ SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'books/db/books.d
 # administrator list
 ADMINS = ['sergey.soroka@me.com']
 
+USER = 'foo'
+PASS = 'bar'
+
 # pagination
 BOOKS_PER_PAGE = 12
 MAX_SEARCH_RESULTS = 60
+
+ASSETS_DEBUG = True

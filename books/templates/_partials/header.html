@@ -1,0 +1,19 @@
+<div class="container">
+	<div class="half top">
+		<div class="caption">
+			<a href="{{ url_for('index') }}" class="logo">The Library</a>
+			<p>List of {{ books_count }} greatest books of all time</p>
+		</div>
+	</div>
+	<div class="half">
+		<div class="account">
+			<a href="#" class="signin">Sign in</a>
+		</div>
+		<div class="search">
+			<form action="/">
+				<input type="text" placeholder="Enter book title or author name">
+				<input type="submit" value="Search">
+			</form>
+		</div>
+	</div>
+</div>

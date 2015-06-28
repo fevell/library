@@ -1,20 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/app.min.css') }}">
-</head>
-<body>
-	<h2>Item</h2>
-	<hr>
-	{% if book %}
-		{% for i in book %}
-			<h1>{{ i.id }}</h1>
-			<p>{{ i.title }}</p>
-		{% endfor %}
-	{% else %}
-	  <h1>Holla!</h1>
-	{% endif %}
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block main %}
+		{% if book %}
+			{% for b in book %}
+				<div class="book-item">
+					<h1>
+						{{ b['Book']['title'] }}
+					</h1>
+					<span class="author">
+						{{ b['Author']['name'] }}
+					</span>
+					<div class="info">
+						<span>
+							Author id: {{ b['Author']['id'] }}. Book id: {{ b['Book']['id'] }}
+						</span>
+					</div>
+				</div>
+
+				<li class="{{ loop.cycle('odd', 'even') }}">{{ row }}</li> 1
+
+				<div class="nav">
+					{% if b['Book']['id'] > 1 %}
+						<div class="prev">
+							<a href="/book/{{ b['Book']['id'] - 1 }}/"></a>
+						</div>
+					{% endif %}
+
+					{% if b['Book']['id'] < books_count %}
+						<div class="next">
+							<a href="/book/{{ b['Book']['id'] + 1 }}/"></a>
+						</div>
+					{% endif %}
+				</div>
+			{% endfor %}
+		{% else %}
+		  <h1>Holla!</h1>
+		{% endif %}
+{% endblock main %}
