@@ -9,6 +9,10 @@
 
 {% block main %}
 	<div class="container">
+		{% if is_signed %}
+			SIGNINED!
+		{% endif %}
+
 		{% if books %}
 			<ul class="books">
 			{% for book, author in books %}

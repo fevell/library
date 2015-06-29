@@ -1,0 +1,24 @@
+<div class="signin-form">
+	<h2>Sign In</h2>
+
+	<form action="{{ url_for('signin') }}" method="post">
+		{{ form.hidden_tag() }}
+		<div class="email">
+			{{ form.email.label }}
+			{{ form.email }}
+
+			{% for message in form.email.errors %}
+			<div class="message">{{ message }}</div>
+			{% endfor %}
+		</div>
+		<div class="password">
+			{{ form.password.label }}
+			{{ form.password }}
+
+			{% for message in form.password.errors %}
+			<div class="message">{{ message }}</div>
+			{% endfor %}
+		</div>
+		<div class="submit">{{ form.submit }}</div>
+	</form>
+</div>

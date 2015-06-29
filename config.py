@@ -26,8 +26,8 @@ SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'books/db/books.d
 # administrator list
 ADMINS = ['sergey.soroka@me.com']
 
-USER = 'foo'
-PASS = 'bar'
+USER = 'sergey'
+PASS = 'fender8989'
 
 # pagination
 BOOKS_PER_PAGE = 12

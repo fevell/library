@@ -7,12 +7,20 @@
 	</div>
 	<div class="half">
 		<div class="account">
-			<a href="#" class="signin">Sign in</a>
+			<a class="signin" href="/signin">Sign in</a>
 		</div>
 		<div class="search">
-			<form action="/">
-				<input type="text" placeholder="Enter book title or author name">
-				<input type="submit" value="Search">
+			<form action="{{ url_for('search') }}" method="post">
+				{{ search_form.hidden_tag() }}
+				{# {{ search_form.search.label }} #}
+				{{ search_form.search(placeholder="Search by Book title or Author name") }}
+				{# {{ search_form.search_by.label }} #}
+				{{ search_form.search_by }}
+
+				{% for message in search_form.search.errors %}
+				<div class="message">{{ message }}</div>
+				{% endfor %}
+				{{ search_form.submit }}
 			</form>
 		</div>
 	</div>

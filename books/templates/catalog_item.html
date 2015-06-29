@@ -4,6 +4,13 @@
 		{% if book %}
 			{% for b in book %}
 				<div class="book-item">
+
+					<div style="background-color:#000; font-size: 20px; color: #fff;">
+						{% for a in Book %}
+							{{ a.title }}
+						{% endfor %}
+					</div>
+
 					<h1>
 						{{ b['Book']['title'] }}
 					</h1>
@@ -16,8 +23,6 @@
 						</span>
 					</div>
 				</div>
-
-				<li class="{{ loop.cycle('odd', 'even') }}">{{ row }}</li> 1
 
 				<div class="nav">
 					{% if b['Book']['id'] > 1 %}
@@ -33,6 +38,7 @@
 					{% endif %}
 				</div>
 			{% endfor %}
+
 		{% else %}
 		  <h1>Holla!</h1>
 		{% endif %}
