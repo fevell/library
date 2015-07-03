@@ -504,12 +504,13 @@
   padding: 0px 0px 0px 20px;
   height: 450px;
   background-color: #fff;
-  background-image: url("images/thumb_cover.jpg");
+  background-image: url("images/big_cover.jpg");
   background-size: 100%;
   color: #fff;
   border-radius: 5px;
-  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.25); }
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003261}}
+  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5); }
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003262}}
   .book-item h1 {
     font-family: Georgia, Times, "Times New Roman", serif;
     font-size: 40px;
@@ -520,33 +521,34 @@
     height: 180px;
     line-height: 50px;
     padding: 10px; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003272}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003273}}
     .book-item span {
       font-size: 17px;
       text-align: center;
       display: block;
       text-transform: uppercase;
       margin-top: 30px; }
-      @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003280}}
+      @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003281}}
       .book-item .info span {
         display: block;
         font-size: 12px;
         opacity: 0.7;
-        margin: 70px auto 0px; }
+        margin: 70px auto 0px;
+        text-shadow: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003291}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003293}}
 .nav {
   position: absolute;
   top: 400px;
   width: 100%; }
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003294}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003296}}
   .nav .prev, .nav .next {
     position: absolute;
     top: 50%;
     margin-top: -21px;
     width: 34px;
     height: 95px; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003299}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003301}}
     .nav .prev a, .nav .next a {
       background-color: transparent;
       background-image: url("images/arrows.svg");
@@ -554,37 +556,37 @@
       position: absolute;
       width: 100%;
       height: 100%; }
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003309}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003311}}
   .nav .prev {
     left: 50px; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003310}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003312}}
     .nav .prev a {
       background-position: 0px 0px; }
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003315}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003317}}
   .nav .next {
     right: 50px; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003316}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003318}}
     .nav .next a {
       background-position: -34px 0px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003326}}
 .books-empty {
   margin: 0px auto;
   display: block;
   text-align: center;
   padding: 150px 0px; }
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003328}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003330}}
   .books-empty h1 {
     font-size: 40px;
     font-weight: 300;
     color: #3E4349; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003333}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003335}}
     .books-empty p {
       display: block;
       margin-top: 20px;
       color: #60718C; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003343}}
 .signin-form {
   display: block;
   margin: 50px auto;
@@ -594,14 +596,14 @@
   border: 1px solid #ddd;
   border-radius: 3px;
   padding: 40px; }
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003349}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003351}}
   .signin-form h2 {
     display: block;
     font-weight: 300;
     margin: 0px auto 20px;
     font-size: 30px;
     font-family: Georgia; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003356}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003358}}
     .signin-form form .message {
       display: inline-block;
       padding: 10px 15px;
@@ -614,31 +616,31 @@
       border: 1px solid #E2D7B9;
       border-radius: 3px;
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2); }
-      @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003369}}
+      @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003371}}
       .signin-form form .email, .signin-form form .password {
         display: block;
         margin: 20px auto 0px; }
-        @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003371}}
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003373}}
         .signin-form form .email label, .signin-form form .password label {
           margin: 30px auto 5px;
           display: block;
           padding-left: 15px;
           text-align: left; }
-          @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003377}}
+          @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003379}}
           .signin-form form .email input, .signin-form form .password input {
             border: 1px solid #ddd;
             border-collapse: collapse;
             height: 30px;
             padding: 0px 10px;
             width: 250px; }
-            @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003382}}
+            @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003384}}
             .signin-form form .email input:focus, .signin-form form .password input:focus {
               background-color: #f7fafa; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003389}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003391}}
     .signin-form form .submit {
       margin: 30px auto 0px;
       display: block; }
-      @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003391}}
+      @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003393}}
       .signin-form form .submit input {
         display: block;
         margin: 0px auto;
@@ -649,14 +651,14 @@
         border: 1px solid transparent;
         color: #fff;
         background-color: #08c; }
-        @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003400}}
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003402}}
         .signin-form form .submit input:hover {
           color: #08C;
           background-color: #FFF;
           border: 1px solid #08C;
           cursor: pointer; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003415}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sergeysoroka\/Dropbox\/work\/projects\/prom\/library\/books\/static\/assets\/scss\/app\.scss}line{font-family:\00003417}}
 .search-results--main {
   margin: 20px auto 0px;
   display: block;
